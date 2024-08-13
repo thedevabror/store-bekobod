@@ -18,7 +18,7 @@ const Promo = () => {
           />
         </a>
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 transition-all duration-300">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-10 transition-all duration-300">
         {promoProducts.map((item) => (
           <div key={item.id} className="border p-4 rounded-lg bg-onSecondary">
             <img src={item.img} alt="" />
