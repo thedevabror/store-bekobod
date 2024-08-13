@@ -8,7 +8,7 @@ const Main = () => {
   return (
     <div>
       <Hero />
-      <section className="bg-bgpage px-[116px] flex flex-col gap-20">
+      <section className="bg-bgpage px-5 min-[768px]:px-[116px] flex flex-col gap-20">
         <Promo />
         <NewProducts />
         <PopularProducts />

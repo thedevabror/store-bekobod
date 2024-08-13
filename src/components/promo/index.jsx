@@ -8,8 +8,13 @@ const Promo = () => {
   return (
     <div>
       <div className="flex items-center justify-between py-10 ">
-        <h1 className="text-4xl font-bold text-onSurface">Акции</h1>
-        <a href="/all-promos" className="text-hardest text-m flex items-center">
+        <h1 className="text-xl min-[768px]:text-4xl font-bold text-onSurface">
+          Акции
+        </h1>
+        <a
+          href="/all-promos"
+          className="text-hardest text-s min-[768px]:text-m flex items-center"
+        >
           <span>Все акции</span>
           <img
             src="down-icon.svg"
@@ -18,13 +23,13 @@ const Promo = () => {
           />
         </a>
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-10 transition-all duration-300">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-1 min-[768px]:gap-10transition-all duration-300">
         {promoProducts.map((item) => (
           <div key={item.id} className="border p-4 rounded-lg bg-onSecondary">
             <img src={item.img} alt="" />
             <span className="text-lg font-bold">{item.price}₽</span>
             <h2 className="text-sm font-normal text-onSurface">
-              {item.name.slice(0, 22)}...
+              {item.name.slice(0, 10)}...
             </h2>
             <ReactStars
               count={5}

@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <div className="w-full relative">
+    <div className="w-full relative max-[768px]:h-[160px] min-[768px]:h-[30vh]">
       <img
         src="hero.png"
         className="w-full h-full object-cover"
@@ -10,12 +10,12 @@ const Hero = () => {
         <div>
           <img
             src="hero-img.png"
-            className="object-cover h-[202px] w-[303px]"
+            className="object-cover max-[500px]:hidden h-[202px] w-[303px] max-[768px]:h-[132px] max-[768px]:w-[198px]"
             alt=""
           />
         </div>
         <div>
-          <h1 className="text-5xl font-extrabold">
+          <h1 className="text-5xl max-[768px]:text-2xl font-extrabold">
             Доставка бесплатно от 1000 ₽
           </h1>
         </div>

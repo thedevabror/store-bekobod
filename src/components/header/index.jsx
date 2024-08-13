@@ -1,11 +1,12 @@
 const Header = () => {
   return (
-    <div className="px-[116px] bg-surface shadow-2xl flex justify-between">
-      <div className="flex items-center gap-20">
+    <div className="px-5 min-[768px]:px-[116px] bg-surface shadow-2xl flex justify-between gap-5 min-[1200px]:gap-10">
+      <div className="flex items-center gap-5 min-[407px]:gap-10 min-[1268px]:gap-20">
         <a href="">
-          <img src="logo.svg" alt="" />
+          <img src="logo.svg" alt="" className="max-[768px]:hidden" />
+          <img src="mini-logo.svg" alt="" className="min-[768px]:hidden" />
         </a>
-        <button className="bg-secondary p-2 flex justify-between items-center gap-5 rounded-[4px]">
+        <button className="bg-secondary p-2 flex justify-between items-center gap-5 rounded-[4px] max-[768px]:hidden">
           <div>
             <img src="catalog-icon.svg" alt="" />
           </div>
@@ -13,7 +14,7 @@ const Header = () => {
             <p className="text-onSecondary text-m">Каталог</p>
           </div>
         </button>
-        <form className="flex justify-between border-secondary border p-2 rounded-[4px] my-4 w-[359px]">
+        <form className="flex justify-between border-secondary border p-2 rounded-[4px] my-4 min-[450px]:w-[359px]">
           <input
             type="text"
             placeholder="Найти товар"
@@ -24,20 +25,32 @@ const Header = () => {
           </button>
         </form>
       </div>
-      <div className="flex gap-20 items-center">
-        <a href="#" className="flex flex-col justify-start items-center gap-1 order-1 my-[24px]">
+      <div className="flex gap-5 min-[1300px]:gap-20 items-center max-[1068px]:hidden">
+        <a
+          href="#"
+          className="flex flex-col justify-start items-center gap-1 order-1 my-[24px]"
+        >
           <img src="wishlist-icon.svg" alt="" />
           <p className="text-s">Избранное</p>
         </a>
-        <a href="#" className="flex flex-col justify-start items-center gap-1 order-1 my-[24px]">
+        <a
+          href="#"
+          className="flex flex-col justify-start items-center gap-1 order-1 my-[24px]"
+        >
           <img src="orders-icon.svg" alt="" />
           <p className="text-s">Заказы</p>
         </a>
-        <a href="#" className="flex flex-col justify-start items-center gap-1 order-1 my-[24px]">
+        <a
+          href="#"
+          className="flex flex-col justify-start items-center gap-1 order-1 my-[24px]"
+        >
           <img src="cart-icon.svg" alt="" />
           <p className="text-s">Корзина</p>
         </a>
-        <a href="#" className="flex justify-between items-center gap-5 order-1 my-[24px]">
+        <a
+          href="#"
+          className="flex justify-between items-center gap-5 order-1 my-[24px]"
+        >
           <img src="avatar-icon.svg" alt="" />
           <p>Алексей</p>
         </a>
