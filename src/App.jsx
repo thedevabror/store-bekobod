@@ -1,5 +1,9 @@
-import "./App.css";
+import Main from "./pages/Main";
 
-export default function App() {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
-}
+const App = () => {
+  return <div>
+    <Main />
+  </div>;
+};
+
+export default App;
