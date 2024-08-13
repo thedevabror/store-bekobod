@@ -1,16 +1,15 @@
 import { products } from "../../mock";
 import ReactStars from "react-rating-stars-component";
-const Promo = () => {
-  const promoProducts = products.filter((product) =>
-    product.tag.includes("promo")
-  );
+
+const NewProducts = () => {
+  const newProducts = products.filter((product) => product.tag.includes("new"));
 
   return (
     <div>
       <div className="flex items-center justify-between py-10 ">
-        <h1 className="text-4xl font-bold text-onSurface">Акции</h1>
+        <h1 className="text-4xl font-bold text-onSurface">Новинки</h1>
         <a href="/all-promos" className="text-hardest text-m flex items-center">
-          <span>Все акции</span>
+          <span>Все новинки</span>
           <img
             src="down-icon.svg"
             className="-rotate-90 ml-2"
@@ -19,7 +18,7 @@ const Promo = () => {
         </a>
       </div>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 transition-all duration-300">
-        {promoProducts.map((item) => (
+        {newProducts.map((item) => (
           <div key={item.id} className="border p-4 rounded-lg bg-onSecondary">
             <img src={item.img} alt="" />
             <span className="text-lg font-bold">{item.price}₽</span>
@@ -47,4 +46,4 @@ const Promo = () => {
   );
 };
 
-export default Promo;
+export default NewProducts;

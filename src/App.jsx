@@ -5,7 +5,7 @@ import Main from "./pages/Main";
 
 const App = () => {
   return (
-    <div>
+    <div className="transition-all duration-300">
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Main />} />
