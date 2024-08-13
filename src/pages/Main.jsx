@@ -1,9 +1,13 @@
-import Header from "../components/header";
+
+import Hero from "../components/hero";
 
 const Main = () => {
   return (
     <div>
-      <Header />
+      <Hero />
+      <section className="bg-bgpage">
+
+      </section>
     </div>
   );
 };

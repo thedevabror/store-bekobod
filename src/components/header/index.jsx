@@ -1,6 +1,6 @@
 const Header = () => {
   return (
-    <div className="px-[116px] bg-surface shadow-md flex justify-between">
+    <div className="px-[116px] bg-surface shadow-2xl flex justify-between">
       <div className="flex items-center gap-20">
         <a href="">
           <img src="logo.svg" alt="" />
@@ -25,21 +25,22 @@ const Header = () => {
         </form>
       </div>
       <div className="flex gap-20 items-center">
-        <div className="flex flex-col justify-start items-center gap-1 order-1 my-[24px]">
+        <a href="#" className="flex flex-col justify-start items-center gap-1 order-1 my-[24px]">
           <img src="wishlist-icon.svg" alt="" />
           <p className="text-s">Избранное</p>
-        </div>
-        <div className="flex flex-col justify-start items-center gap-1 order-1 my-[24px]">
+        </a>
+        <a href="#" className="flex flex-col justify-start items-center gap-1 order-1 my-[24px]">
           <img src="orders-icon.svg" alt="" />
           <p className="text-s">Заказы</p>
-        </div>
-        <div className="flex flex-col justify-start items-center gap-1 order-1 my-[24px]">
+        </a>
+        <a href="#" className="flex flex-col justify-start items-center gap-1 order-1 my-[24px]">
           <img src="cart-icon.svg" alt="" />
           <p className="text-s">Корзина</p>
-        </div>
-        <div className="flex flex-col justify-start items-center gap-1 order-1 my-[24px]">
+        </a>
+        <a href="#" className="flex justify-between items-center gap-5 order-1 my-[24px]">
           <img src="avatar-icon.svg" alt="" />
-        </div>
+          <p>Алексей</p>
+        </a>
       </div>
     </div>
   );

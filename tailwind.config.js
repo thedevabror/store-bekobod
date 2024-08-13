@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+// import daisyui from "daisyui";
 
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
@@ -6,13 +7,13 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Rubik', 'sans-serif'],
+        sans: ["Rubik", "sans-serif"],
       },
 
       colors: {
         background: "#F9F9F9",
         onBackground: "#000000",
-        surface: "#FFFFF",
+        surface: "#FFFFFF",
         onSurface: "#414141",
         primary: "#FF6633",
         onPrimary: "#FFFFFF",
@@ -26,6 +27,7 @@ export default {
         info: "#1CB9FC",
         warning: "#FCA21C",
         error: "#D80000",
+        bgpage: "#FBF8EC",
       },
       fontSize: {
         xs: ["0.75rem", { lineHeight: "1rem" }],
