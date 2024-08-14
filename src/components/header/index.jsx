@@ -11,13 +11,13 @@ const Header = () => {
             <img src="catalog-icon.svg" alt="" />
           </div>
           <div>
-            <p className="text-onSecondary text-m">Каталог</p>
+            <p className="text-onSecondary text-m">Katalog</p>
           </div>
         </button>
         <form className="flex justify-between border-secondary border p-2 rounded-[4px] my-4 min-[450px]:w-[359px]">
           <input
             type="text"
-            placeholder="Найти товар"
+            placeholder="Mahsulotni toping"
             className="outline-none w-full"
           />
           <button type="submit">
@@ -31,28 +31,28 @@ const Header = () => {
           className="flex flex-col justify-start items-center gap-1 order-1 my-[24px]"
         >
           <img src="wishlist-icon.svg" alt="" />
-          <p className="text-s">Избранное</p>
+          <p className="text-s">Sevimlilar</p>
         </a>
         <a
           href="#"
           className="flex flex-col justify-start items-center gap-1 order-1 my-[24px]"
         >
           <img src="orders-icon.svg" alt="" />
-          <p className="text-s">Заказы</p>
+          <p className="text-s">Buyurtmalar</p>
         </a>
         <a
           href="#"
           className="flex flex-col justify-start items-center gap-1 order-1 my-[24px]"
         >
           <img src="cart-icon.svg" alt="" />
-          <p className="text-s">Корзина</p>
+          <p className="text-s">Savat</p>
         </a>
         <a
           href="#"
           className="flex justify-between items-center gap-5 order-1 my-[24px]"
         >
           <img src="avatar-icon.svg" alt="" />
-          <p>Алексей</p>
+          <p>Aleksey</p>
         </a>
       </div>
     </div>

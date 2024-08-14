@@ -7,19 +7,19 @@ const Footer = () => {
         </a>
         <div className="flex gap-5 max-[768px]:flex-col">
           <a href="#" className="text-[12px]">
-            О компании
+            Kompaniya haqida
           </a>
           <a href="#" className="text-[12px]">
-            Контакты
+            Kontaktlar
           </a>
           <a href="#" className="text-[12px]">
-            Вакансии
+            Bo`sh ish o`rinlari
           </a>
           <a href="#" className="text-[12px]">
-            Статьи
+            Maqolalar
           </a>
           <a href="#" className="text-[12px]">
-            Политика обработки персональных данных
+            Shaxsiy ma`lumotlarni qayta ishlash siyosati
           </a>
         </div>
       </div>

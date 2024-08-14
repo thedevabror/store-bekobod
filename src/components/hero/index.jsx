@@ -16,7 +16,7 @@ const Hero = () => {
         </div>
         <div>
           <h1 className="text-5xl max-[768px]:text-2xl font-extrabold">
-            Доставка бесплатно от 1000 ₽
+            100 000 so`mdan bepul yetkazib berish
           </h1>
         </div>
       </div>
